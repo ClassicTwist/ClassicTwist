@@ -20,8 +20,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -30,10 +31,18 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        working-directory: mobile-app
+        run: npm ci
 
       - name: Build web version
+        working-directory: mobile-app
         run: npx expo export --platform web
+
+      - name: Add _redirects and 404.html to dist
+        working-directory: mobile-app
+        run: |
+          echo '/* /index.html 200' > dist/_redirects
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -41,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'  # or './web-build' if that's the folder
+          path: mobile-app/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
