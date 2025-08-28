@@ -41,6 +41,7 @@
       ]
     ],
     "experiments": {
+      "baseUrl": "/ClassicTwist",
       "typedRoutes": true
     }
   }
