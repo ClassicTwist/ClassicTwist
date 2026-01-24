@@ -58,7 +58,46 @@ export default function AboutUsScreen() {
       <View style={styles.ceoSection}>
         <Image source={ceoImage} style={[styles.ceoImage, { width: width - 64 }]} resizeMode="contain" />
         <Text style={styles.ceoSummary}>
-          Our CEO, Jane Doe, is passionate about delivering unforgettable culinary experiences. With years of expertise and a love for creative cuisine, she leads Classic Twist to new heights in catering excellence.
+A Classic Twist began in 2020 with a simple but powerful vision: to bring people together through great food, great vibes, and unforgettable experiences. What started as a passion project has grown into a signature event brand in Georgia — known for its mixers, pop‑up shops, catered experiences, and elevated social gatherings.
+
+Founded and led by CEO Keisha Rolland, A Classic Twist was built with a bigger dream in mind:
+to evolve into a full Southern‑style restaurant that blends comfort, culture, and community.
+
+Every event — from catered dinners to mixer nights — is a stepping stone toward that future. The brand’s signature style of hospitality, soulful menus, and warm atmosphere reflects the restaurant experience Keisha is working toward.
+
+Meet the Visionary: Keisha Rolland
+
+Keisha Rolland is the creative force behind A Classic Twist. Her passion for food, community, and connection drives every detail of the brand. She curates events that feel intentional, welcoming, and full of flavor — the same qualities she plans to bring into her future restaurant.
+
+Her leadership blends creativity, precision, and heart. Under her direction, A Classic Twist has become a trusted name for adults seeking elevated social experiences with a warm, Southern twist.
+
+What We Do
+
+A Classic Twist hosts and curates:
+
+• Catering experiences inspired by Southern comfort and hospitality
+• Mixer events that bring grown folks together in a classy, relaxed atmosphere
+• Pop‑up shops & specialty events that showcase food, culture, and community
+• Curated dining experiences with appetizers, dinner, dessert, and signature non‑alcoholic beverages
+• Live entertainment & DJs that set the perfect mood
+• Beautifully themed environments designed for mingling, dancing, and celebrating
+
+
+Every event is crafted with intention — a preview of the restaurant experience to come.
+
+Our Mission
+
+To create elevated, inclusive, and unforgettable experiences rooted in Southern hospitality, great food, and community connection.
+
+Our Promise
+
+✨ Professionalism
+✨ Creativity
+✨ Comfort
+✨ Class
+✨ Community
+
+A Classic Twist isn’t just an event — it’s the beginning of a Southern‑style legacy.
         </Text>
       </View>
 
