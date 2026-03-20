@@ -34,9 +34,11 @@ jobs:
       - name: Verify Node version
         run: node -v
 
-      - name: Install dependencies
-        working-directory: mobile-app
-        run: npm ci
+- name: Clean install (force fresh deps)
+  working-directory: mobile-app
+  run: |
+    rm -rf node_modules package-lock.json
+    npm install
 
       - name: Build web version
         working-directory: mobile-app
